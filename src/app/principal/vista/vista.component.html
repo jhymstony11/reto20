@@ -1,0 +1,8 @@
+<input type="button" value="Mostrar Usuarios" (click)="mostrar=!mostrar">
+<section *ngIf="mostrar">
+    <ul *ngFor="let item of listado" >
+        <li>{{ item.name }}</li>
+      </ul>
+</section>
+
+
